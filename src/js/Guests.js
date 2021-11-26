@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react"
 
-export default function UserData() {
+export default function Username() {
     const eventsBoard =
         [{
             name: "First"
@@ -10,12 +10,11 @@ export default function UserData() {
         }]
     const [inputs, setInputs] = useState(eventsBoard)
     const guestRef= useRef()
-
+    
     function handleSubmit(e) {
         e.preventDefault()
         const ref= guestRef.current.value;
         setInputs(inputs => [...inputs, {name: ref}])
-        alert(ref)
     }
     return (
         <div>

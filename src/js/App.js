@@ -1,14 +1,12 @@
 import '../App.css';
-import UserData from './UserData';
-import Header from './Header';
+import Guests from './Guests';
+import Main from './Main';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Header />
-          <UserData />
-      </header>
+      <Main />
+      <Guests />
     </div>
   );
 }
